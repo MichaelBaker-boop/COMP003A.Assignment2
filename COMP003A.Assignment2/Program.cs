@@ -47,24 +47,24 @@ namespace COMP003A.Assignment2
             Console.WriteLine($"\n\nHello, {firstName} {lastName}!");
             Console.WriteLine($"Your current age is {userAge}.");
             Console.WriteLine($"In 5 years, you will be {futureAge}.");
-            Console.WriteLine($"The original price of the item is ${productPrice}.");
+            Console.WriteLine($"The original price of the item is ${productPrice:F2}."); //The :F2 here keeps two decimal places on the output
             
             if (isStudent)
             {
-                Console.WriteLine($"As a student, the price is ${studentPrice}.");
+                Console.WriteLine($"As a student, the price is ${studentPrice:F2}.");
             }
                 else
             {
-                Console.WriteLine($"If you were a student, the price would be ${studentPrice}.");
+                Console.WriteLine($"If you were a student, the price would be ${studentPrice:F2}.");
             }
 
             if (userAge >= 60)
             {
-                Console.WriteLine($"As a senior, your price would be ${seniorPrice}.");
+                Console.WriteLine($"As a senior, your price would be ${seniorPrice:F2}");
             }
             else
             {
-                Console.WriteLine($"If you were a seinor, the price would be ${seniorPrice}.");
+                Console.WriteLine($"If you were a seinor, the price would be ${seniorPrice:F2}.");
             }
       
         }
