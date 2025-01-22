@@ -49,12 +49,13 @@ namespace COMP003A.Assignment2
             Console.WriteLine($"In 5 years, you will be {futureAge}.");
             Console.WriteLine($"The original price of the item is ${productPrice}.");
             
-            if (isStudent = true)
+            if (isStudent)
             {
-                Console.WriteLine($"As a student, the price would be ${studentPrice}.");
-            } else
+                Console.WriteLine($"As a student, the price is {studentPrice}.");
+            }
+                else
             {
-                Console.WriteLine($"If you were a student, the price would be ${studentPrice}.")
+                Console.WriteLine($"If you were a student, the price would be {studentPrice}.");
             }
 
 
