@@ -1,4 +1,10 @@
-﻿namespace COMP003A.Assignment2
+﻿/*
+    Author: Michael Baker
+    Course: Comp003A
+    Faculty: Jonathan Cruz
+    Purpose: Discount Calculator
+*/
+namespace COMP003A.Assignment2
 {
     internal class Program
     {
@@ -10,7 +16,9 @@
             double productPrice;
             bool isStudent;
 
-            Console.WriteLine("**********\nWelcome to the Discount Calculator!\n**********");
+            Console.WriteLine("***********************************\nWelcome to the Discount Calculator!\n***********************************");
+
+            //User Inputs
 
             Console.Write("What is your first name? ");
             firstName = Console.ReadLine();
@@ -24,8 +32,21 @@
             Console.Write("What is the price of the item you are interested in? ");
             productPrice = double.Parse(Console.ReadLine());
 
-            Console.Write("Are you a student? ");
+            Console.Write("Are you a student? (true/false) ");
             isStudent = bool.Parse(Console.ReadLine());
+
+            // Calculations
+
+            int futureAge = userAge + 5;
+
+            // Outputs
+
+            Console.WriteLine($"\n\nHello, {firstName} {lastName}!");
+            Console.WriteLine($"Your current age is {userAge}.");
+            Console.WriteLine($"In 5 years, your age will be {futureAge}.");
+            Console.WriteLine($"The original price of the item is ${productPrice}.");
+
+
 
         }
     }
