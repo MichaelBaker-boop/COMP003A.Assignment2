@@ -44,8 +44,8 @@ namespace COMP003A.Assignment2
 
             // Outputs
 
-            Console.WriteLine("***********************************");
-            Console.WriteLine($"\n\nHello, {firstName} {lastName}!");
+            Console.WriteLine("\n\n+***********************************");
+            Console.WriteLine($"Hello, {firstName} {lastName}!");
             Console.WriteLine($"Your current age is {userAge}.");
             Console.WriteLine($"In 5 years, you will be {futureAge}.");
             Console.WriteLine($"The original price of the item is ${productPrice:F2}."); //The :F2 here keeps two decimal places on the output
@@ -61,11 +61,11 @@ namespace COMP003A.Assignment2
 
             if (userAge >= 60)
             {
-                Console.WriteLine($"As a senior, your discounted price is ${seniorPrice:F2}");
+                Console.WriteLine($"As a senior senior citizen, your discounted price is ${seniorPrice:F2}");
             }
             else
             {
-                Console.WriteLine($"If you were a seinor, the discounted price would be ${seniorPrice:F2}.");
+                Console.WriteLine($"As a senior citizen, your discounted price would be ${seniorPrice:F2}.");
             }
 
             Console.WriteLine("***********************************");
