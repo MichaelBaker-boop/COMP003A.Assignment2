@@ -44,6 +44,7 @@ namespace COMP003A.Assignment2
 
             // Outputs
 
+            Console.WriteLine("***********************************");
             Console.WriteLine($"\n\nHello, {firstName} {lastName}!");
             Console.WriteLine($"Your current age is {userAge}.");
             Console.WriteLine($"In 5 years, you will be {futureAge}.");
@@ -51,22 +52,25 @@ namespace COMP003A.Assignment2
             
             if (isStudent)
             {
-                Console.WriteLine($"As a student, the price is ${studentPrice:F2}.");
+                Console.WriteLine($"As a student, your discounted price is ${studentPrice:F2}.");
             }
                 else
             {
-                Console.WriteLine($"If you were a student, the price would be ${studentPrice:F2}.");
+                Console.WriteLine($"If you were a student, the discounted price would be ${studentPrice:F2}.");
             }
 
             if (userAge >= 60)
             {
-                Console.WriteLine($"As a senior, your price would be ${seniorPrice:F2}");
+                Console.WriteLine($"As a senior, your discounted price is ${seniorPrice:F2}");
             }
             else
             {
-                Console.WriteLine($"If you were a seinor, the price would be ${seniorPrice:F2}.");
+                Console.WriteLine($"If you were a seinor, the discounted price would be ${seniorPrice:F2}.");
             }
-      
+
+            Console.WriteLine("***********************************");
+
+
         }
     }
 }
