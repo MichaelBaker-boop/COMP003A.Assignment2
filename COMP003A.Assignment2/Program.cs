@@ -38,14 +38,24 @@ namespace COMP003A.Assignment2
             // Calculations
 
             int futureAge = userAge + 5;
+            double studentPrice = productPrice * 0.9;
+            double seniorPrice = productPrice * 0.8;
+
 
             // Outputs
 
             Console.WriteLine($"\n\nHello, {firstName} {lastName}!");
             Console.WriteLine($"Your current age is {userAge}.");
-            Console.WriteLine($"In 5 years, your age will be {futureAge}.");
+            Console.WriteLine($"In 5 years, you will be {futureAge}.");
             Console.WriteLine($"The original price of the item is ${productPrice}.");
-
+            
+            if (isStudent = true)
+            {
+                Console.WriteLine($"As a student, the price would be ${studentPrice}.");
+            } else
+            {
+                Console.WriteLine($"If you were a student, the price would be ${studentPrice}.")
+            }
 
 
         }
