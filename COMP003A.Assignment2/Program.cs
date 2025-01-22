@@ -58,7 +58,15 @@ namespace COMP003A.Assignment2
                 Console.WriteLine($"If you were a student, the price would be {studentPrice}.");
             }
 
-
+            if (userAge >= 60)
+            {
+                Console.WriteLine($"As a senior, your price would be {seniorPrice}.");
+            }
+            else
+            {
+                Console.WriteLine($"If you were a seinor, the price would be {seniorPrice}.");
+            }
+      
         }
     }
 }
