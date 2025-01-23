@@ -54,7 +54,7 @@ namespace COMP003A.Assignment2
             {
                 Console.WriteLine($"As a student, your discounted price is ${studentPrice:F2}.");
             }
-                else
+            else
             {
                 Console.WriteLine($"If you were a student, the discounted price would be ${studentPrice:F2}.");
             }
